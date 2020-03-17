@@ -1,0 +1,95 @@
+body{
+    background: rgb(220, 241, 241);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header:hover {
+    background-color: fuchsia;
+}
+header{
+    background: black;
+    padding: 20px;
+}
+section.feature-box{
+    background: rgb(69, 29, 211);
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    margin: 20px;
+}
+.feature-box.sales div{
+    background: rgb(185, 107, 107);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 1px;
+    width: 100px;
+    padding: 10px 20px;
+}
+.feature-box.closeouts div{
+    background: rgb(107, 185, 107);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 1px;
+    width: 100px;
+    margin-right: 10px;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+#frank:hover {
+    background-color: blanchedalmond;
+    position: relative;
+    animation-name: example;
+    animation-duration: 8s;
+}
+#frank{
+    background: violet;
+    width: 660px;
+    margin-left: 300px;
+}
+ul:hover {
+    background-color: darkorange;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+footer{
+    background: black;
+    padding: 10px 20px;
+}
+section:hover {
+    background-color: lawngreen;
+}
+li {
+    display: inline-block;
+    background-color: gray;
+    border-radius: 3px;
+    padding: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+li:first-child {
+    background: red;
+}
+li:last-child {
+    background: burlywood;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+li:hover {
+    background-color: aquamarine;
+}
