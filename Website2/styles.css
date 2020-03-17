@@ -37,8 +37,16 @@ section.feature-box{
     width: 100px;
     margin-right: 10px;
 }
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
 #frank:hover {
     background-color: blanchedalmond;
+    animation-name: example;
+    animation-duration: 4s;
 }
 #frank{
     background: violet;
