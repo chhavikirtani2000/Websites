@@ -1,0 +1,200 @@
+body{
+    background: rgb(240, 229, 233);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    height: 250px;
+    background-image: url("images/nemo.jpeg");
+    background-size: 70%;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
+section.feature-box{
+    background: rgb(38, 73, 49);
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.feature-box.sales div{
+    background: rgb(235, 202, 202);
+    color: rgb(31, 6, 6);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 1px;
+    width: 100px;
+    padding: 10px 20px;
+    shape-outside: border-box;
+    position: relative;
+    left: 100px;
+    text-align: center;
+}
+.feature-box.sales div a{
+    color: black;
+}
+
+.feature-box.closeouts div{
+    background: rgb(107, 185, 107);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 1px;
+    width: 100px;
+    margin-right: 10px;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+#frank:hover {
+    background-color: blanchedalmond;
+    position: relative;
+    /* animation-name: example; 
+    animation-duration: 8s;
+    animation-iteration-count: infinite;  */
+}
+header .logo {
+    position: relative;
+    top: -25px;
+    right: 20px;
+}
+header li.logo {
+    position: relative;
+    right: 120px;
+}
+header li.logo a {
+    background-image: url("images/logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+    top: 1px;
+    position: relative;
+    text-indent: -9999999px;
+}
+header li.title {
+    position: relative;
+    left: -400px;
+}
+header li.secondchild {
+    position: relative;
+    right: 180px;
+}
+header li.thirdchild {
+    position: relative;
+    right: 140px;
+}
+header .mobile {
+    display: none;
+    position: relative;
+    right: 90px;
+}
+@media screen and (max-width: 755px) {
+    header {
+        height: 200px;
+    }
+    header .mobile {
+        display: inline-block;
+    }
+    header .desktop {
+        display: none;
+    }
+
+}
+#frank{
+    background: rgb(38, 73, 49);
+    width: 660px;
+    margin-left: 400px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #0005;
+    position: relative;
+    top: -20px;
+    width: 9000px;
+    height: 130px;
+}
+section.love {
+    background-color: rgb(252, 241, 237);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+}
+/*
+@media screen and (max-width: 800px) {
+    section.love {
+        display: block;
+    }
+}*/
+footer{
+    background: black;
+    padding: 10px 20px;
+}
+section.feature-box:hover {
+    background-color: rgb(34, 37, 31);
+}
+section.love figure{
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    text-transform: uppercase;
+    color: black;
+}
+section.love figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 400px;
+    box-shadow:gray 0 0 20px;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 2px;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: white;
+}
+li:first-child {
+    color: white;
+}
+li:last-child {
+    color: white;
+    position: relative;
+    right: 120px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+li:hover {
+    background-color: rgb(10, 12, 7);
+}
+@media screen and (max-width: 800px)/*under 800 px*/ {
+    section.love {
+        background: red;
+    }
+    header {
+        height: 250px;
+        background-position: 0 80px;
+    }
+}
